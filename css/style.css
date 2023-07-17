@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&family=Nova+Round&display=swap');
+
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Nova Round', cursive; */
+
+:root{
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+}
+
+html, body, main {
+    overflow-x: hidden;
+    background-color: #F0F8FF !important;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.visible{
+    display: flex !important;
+    visibility: visible !important;
+}
+
+.hidden{
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
+/* Start Navbar Style */
+header {
+    background: rgb(115, 233, 115);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1500 !important;
+}
+
+.nav-logo{
+    width: 30%;
+    max-width: 1200px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.container-navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: 0% auto;   
+    z-index: 1000;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+    gap: 50px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1300px;
+    z-index: 1000;
+    
+}
+
+.nav-link a{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 100% !important;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+
+.nav-link a:hover{
+    color: #000000a8;
+}
+
+.nav-toggle{
+    color: #FFFFFF;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+/* End Navbar Style */
+
+
+
+/* float buttons */
+
+.btnWsp{
+    position: fixed;
+    bottom: 3.125rem;
+    right: 1.25rem;
+    z-index: 1500 !important;
+}
+
+.up{
+    position: fixed;
+    /* line-height: 64px; */
+    bottom: 100px;
+    right: 30px;
+    text-align: center;
+    z-index: 100;
+}
+
+.repair{
+    display: flex;
+    width: 70%;
+    margin: 30px auto 50px auto;
+}
+
+/* float buttons */
+
+.company{
+    margin: 10% auto;
+}
+
+/* contact style  */
+
+
+.contact-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% auto 0 auto;
+    padding: 20px;
+    position: relative;
+    /* max-width: 1000px; */
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 600px;
+  }
+  
+  .form-control, 
+  textarea {
+    max-width: 800px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+.label-form{
+    display: flex;
+    align-items: center;
+}
+
+form label{
+    margin-right: 20px;
+}
+form label i{
+    font-size: 2rem;
+}
+form input, textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: .625rem;
+    border: none;
+    box-shadow: .1875rem .1875rem green;
+    background-color: rgba(0, 128, 0, 0.356);
+}
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 100%;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    background: green;
+    border-radius: 15px 0;
+  }
+  
+  .alt-send-button {
+    width: 100%;
+    height: 34px;
+    transition: all .2s ease-in-out;
+    color: #FFFFFF;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 800px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #000000;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #000000;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #000000 !important;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: rgba(0, 128, 0, 0.397); 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+
+  footer{
+    background-color: rgb(115, 233, 115);
+}
+
+.social-media a i{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.social-media a i:hover{
+    color: #000000;
+    transition: all .5s;
+    transform: rotate(360deg) !important;
+}
+
+iframe{
+    width: 100% !important;
+    height: 100vh !important;
+}
+.back{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    background: #F0F8FF;
+    padding: 10px;
+    border-radius: 10px 0;
+}

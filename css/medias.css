@@ -1,0 +1,65 @@
+/*----- Medias Queries -----*/
+@media (max-width:50rem){
+    .visible{
+        display: none !important;
+        visibility: hidden !important;
+    }
+    
+    .hidden{
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .repair{
+        width: 100%;
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-right: 30px;
+    }
+
+    header{
+        z-index: 1900 !important;
+        margin: 0 !important;
+    }
+
+    .nav-logo{
+        width: 60%;
+    }
+
+    nav{
+        position: absolute;
+        top: -100vh;
+        display: flex;
+        flex-direction: column;
+        background: rgb(115, 233, 115) !important;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 100px);
+        width: 100%;
+        z-index: 1000 !important;
+        transition: .6s;
+        padding: 10px !important;
+    }
+
+    nav .nav-list{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .active{
+        top: 100px;
+    }
+
+    .company{
+        margin: 35% auto 10% auto;
+    }
+
+    .contact-wrapper{
+        flex-direction: column;
+        width: 95% !important;
+        gap: 35px;
+    }
+
+}
